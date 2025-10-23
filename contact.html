@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - TailorCraft</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Include navbar here -->
+
+  <header class="bg-info text-white text-center py-5">
+    <h1>Contact Us</h1>
+    <p>Book an appointment or send us a message</p>
+  </header>
+
+  <section class="container py-4">
+    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="row g-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" name="name" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" name="email" required>
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">Message / Appointment Details</label>
+        <textarea class="form-control" name="message" rows="5" required></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="bg-dark text-white text-center p-3 mt-4">
+    &copy; 2025 TailorCraft. All rights reserved.
+  </footer>
+</body>
+</html>
